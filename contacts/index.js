@@ -61,6 +61,13 @@ router.get('/contactlist/id/:id', function (req, res) {
     res.json(findId(id));
 })
 
+// create new contact
+router.post('/contactlist', (req, res) => {
+    var addlist = req.body
+    addlist.Id = contactlist.length
+    contactlist.push(addlist)
+    res.status(201).json(addlist)
+})
 
 
 module.exports = router
