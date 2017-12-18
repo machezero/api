@@ -5,28 +5,28 @@ var contactlist = [
         "Id": "0",
         'Name': "Thitaporn gonkong",
         "Email": "friends_forever_23@hotmail.co.th",
-        "Phone": "0801043229"
+        "Phone": "080-104-3229"
     },
 
     {
         "Id": "1",
         "Name": "Juthathip Sopithwannakul",
         "Email": "ivieawjoh@gmail.com",
-        "Phone": "0909912638"
+        "Phone": "090-991-2638"
     },
 
     {
         "Id": "2",
         "Name": "Piyaphong Paikamnam",
         "Email": "mache6456@gmail.com",
-        "Phone": "0825237431"
+        "Phone": "082-523-7431"
     },
 
     {
         "Id": "3",
         "Name": "Piyawat Buadok",
         "Email": "58160575@go.buu.ac.th",
-        "Phone": "0854478673"
+        "Phone": "085-447-8673"
     },
 ];
 
