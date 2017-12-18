@@ -69,5 +69,19 @@ router.post('/contactlist', (req, res) => {
     res.status(201).json(addlist)
 })
 
+// update contact information
+router.put('/contactlist/:id', (req, res) => {
+    var edit = req.body
+    var id = req.params.id
+    contactlist[id] = edit
+    res.status(200).json('!!! Update Complete !!!')
+})
+
+//remove contact from list
+router.delete('/contactlist/:id', (req, res) => {
+    var deleteid = req.params.id
+    contactlist.splice(deleteid, 1)
+    res.status(200).json('!!! Delete Complete !!!')
+})
 
 module.exports = router
