@@ -44,3 +44,23 @@ findId = function (id) {
         if (contactlist[i].Id == id) return contactlist[i];
     }
 };
+//list all contacts
+router.get('/contactlist', function (req, res) {
+    res.json(findAll());
+})
+
+//search contact by name
+router.get('/contactlist/name/:name', function (req, res) {
+    var name = req.params.name;
+    res.json(findName(name));
+})
+
+//get contact information
+router.get('/contactlist/id/:id', function (req, res) {
+    var id = req.params.id;
+    res.json(findId(id));
+})
+
+
+
+module.exports = router
